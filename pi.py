@@ -4,4 +4,7 @@ text = """
 """
 
 # TODO
-
+answer = ''
+for i in map(len,text.split()):
+    answer += str(i)
+print(answer)
