@@ -6,7 +6,7 @@ class NumberError(Exception):
     pass
 
 def prime_number(n):
-    if n <= 1:
+    if n <= 1 or not isinstance(n, int):
         raise NumberError(f"{n}は適切な入力ではありません。")
     count = 2
     while count <= n ** (1 / 2):
