@@ -4,4 +4,9 @@ text = """
 """
 
 # TODO
-
+answer = ''
+text = text.replace(",","")
+text = text.replace(".","")
+for i in map(len,text.split()):
+    answer += str(i)
+print(answer)
