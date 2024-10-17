@@ -2,16 +2,16 @@ a = input("aの値を入力: ")
 b = input("bの値を入力: ")
 
 # TODO
+def prime_number(n):
+    if n == 1:
+        return False
+    for i in range(2, int(n ** (1 / 2) + 1)):
+        if n % i == 0:
+            return False   
+    return True
+    
 numbers = [int(a),int(b)]
 for number in numbers:
-    count = 2
-    if number <= 1:
-        print(f"{number}は素数ではありません")
-        continue
-    while count <= number ** (1 / 2):
-        if number % count == 0:
-            print(f"{number}は素数ではありません")
-            break
-        count += 1
-    if count > number ** (1 / 2):
-        print(f"{number}は素数です")
+
+    print(f"{number}:{prime_number(number)}")
+
