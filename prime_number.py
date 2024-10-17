@@ -12,4 +12,6 @@ def prime_number(n):
     
 numbers = [int(a),int(b)]
 for number in numbers:
+
     print(f"{number}:{prime_number(number)}")
+

@@ -5,6 +5,7 @@ import numpy as np
 # print(sin(0))
 # >>> 0
 # ----------
+
 def integral(f=sin, a=0, b=1, N=100):
     N=int(N)
     h = (b - a) / N
@@ -30,5 +31,6 @@ f = [sin, func_test_1, func_test_2]
 for i in range(prm.shape[0]):
     a, b, N = prm[i, :]
     print(integral(f=f[i], a=a, b=b, N=N))
+
 
 

@@ -2,6 +2,7 @@ from random import randint
 a = input("a の値を入力: ")
 b = input("b の値を入力: ")
 
+
 # TODO
 
 def euclid(high, low):
@@ -19,3 +20,4 @@ b = int(b)
 
 print(euclid(a, b))
 print(mutually_prime(a, b))
+
